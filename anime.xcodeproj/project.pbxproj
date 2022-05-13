@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D38B6321282E270F005FD423 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38B6320282E270F005FD423 /* MainViewController.swift */; };
+		D38B6323282E2FC8005FD423 /* AnimeTrendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38B6322282E2FC8005FD423 /* AnimeTrendingTableViewCell.swift */; };
+		D38B6326282E3B19005FD423 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = D38B6325282E3B19005FD423 /* Nuke */; };
 		D3BBC5F728294AC300E9F758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BBC5F628294AC300E9F758 /* AppDelegate.swift */; };
 		D3BBC5F928294AC300E9F758 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BBC5F828294AC300E9F758 /* SceneDelegate.swift */; };
-		D3BBC5FB28294AC300E9F758 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BBC5FA28294AC300E9F758 /* ViewController.swift */; };
 		D3BBC5FE28294AC300E9F758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3BBC5FC28294AC300E9F758 /* Main.storyboard */; };
 		D3BBC60028294AC400E9F758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3BBC5FF28294AC400E9F758 /* Assets.xcassets */; };
 		D3BBC60328294AC400E9F758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3BBC60128294AC400E9F758 /* LaunchScreen.storyboard */; };
@@ -18,10 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D38B6320282E270F005FD423 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D38B6322282E2FC8005FD423 /* AnimeTrendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTrendingTableViewCell.swift; sourceTree = "<group>"; };
 		D3BBC5F328294AC300E9F758 /* anime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3BBC5F628294AC300E9F758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3BBC5F828294AC300E9F758 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D3BBC5FA28294AC300E9F758 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3BBC5FD28294AC300E9F758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3BBC5FF28294AC400E9F758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3BBC60228294AC400E9F758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,12 +38,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38B6326282E3B19005FD423 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D38B631F282E26F3005FD423 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D38B6320282E270F005FD423 /* MainViewController.swift */,
+				D3BBC5FC28294AC300E9F758 /* Main.storyboard */,
+				D38B6322282E2FC8005FD423 /* AnimeTrendingTableViewCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		D3BBC5EA28294AC300E9F758 = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +74,10 @@
 		D3BBC5F528294AC300E9F758 /* anime */ = {
 			isa = PBXGroup;
 			children = (
+				D38B631F282E26F3005FD423 /* Main */,
 				D3BBC60B2829511400E9F758 /* Splash */,
 				D3BBC5F628294AC300E9F758 /* AppDelegate.swift */,
 				D3BBC5F828294AC300E9F758 /* SceneDelegate.swift */,
-				D3BBC5FA28294AC300E9F758 /* ViewController.swift */,
-				D3BBC5FC28294AC300E9F758 /* Main.storyboard */,
 				D3BBC5FF28294AC400E9F758 /* Assets.xcassets */,
 				D3BBC60128294AC400E9F758 /* LaunchScreen.storyboard */,
 				D3BBC60428294AC400E9F758 /* Info.plist */,
@@ -97,6 +110,9 @@
 			dependencies = (
 			);
 			name = anime;
+			packageProductDependencies = (
+				D38B6325282E3B19005FD423 /* Nuke */,
+			);
 			productName = anime;
 			productReference = D3BBC5F328294AC300E9F758 /* anime.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +141,9 @@
 				Base,
 			);
 			mainGroup = D3BBC5EA28294AC300E9F758;
+			packageReferences = (
+				D38B6324282E3B19005FD423 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = D3BBC5F428294AC300E9F758 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -153,10 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3BBC5FB28294AC300E9F758 /* ViewController.swift in Sources */,
 				D3BBC5F728294AC300E9F758 /* AppDelegate.swift in Sources */,
 				D3BBC5F928294AC300E9F758 /* SceneDelegate.swift in Sources */,
+				D38B6323282E2FC8005FD423 /* AnimeTrendingTableViewCell.swift in Sources */,
 				D3BBC60D2829514400E9F758 /* SplashViewController.swift in Sources */,
+				D38B6321282E270F005FD423 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +396,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D38B6324282E3B19005FD423 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = exactVersion;
+				version = 9.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D38B6325282E3B19005FD423 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D38B6324282E3B19005FD423 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D3BBC5EB28294AC300E9F758 /* Project object */;
 }
