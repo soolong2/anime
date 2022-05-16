@@ -17,6 +17,7 @@
 		D3BBC60328294AC400E9F758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3BBC60128294AC400E9F758 /* LaunchScreen.storyboard */; };
 		D3BBC60D2829514400E9F758 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BBC60C2829514400E9F758 /* SplashViewController.swift */; };
 		D3BBC60F2829516A00E9F758 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3BBC60E2829516A00E9F758 /* Splash.storyboard */; };
+		D3D6F10F283286F300E6032E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D3D6F10E283286F300E6032E /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D38B6326282E3B19005FD423 /* Nuke in Frameworks */,
+				D3D6F10F283286F300E6032E /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +114,7 @@
 			name = anime;
 			packageProductDependencies = (
 				D38B6325282E3B19005FD423 /* Nuke */,
+				D3D6F10E283286F300E6032E /* Alamofire */,
 			);
 			productName = anime;
 			productReference = D3BBC5F328294AC300E9F758 /* anime.app */;
@@ -143,6 +146,7 @@
 			mainGroup = D3BBC5EA28294AC300E9F758;
 			packageReferences = (
 				D38B6324282E3B19005FD423 /* XCRemoteSwiftPackageReference "Nuke" */,
+				D3D6F10D283286F300E6032E /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = D3BBC5F428294AC300E9F758 /* Products */;
 			projectDirPath = "";
@@ -406,6 +410,14 @@
 				version = 9.6.1;
 			};
 		};
+		D3D6F10D283286F300E6032E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -413,6 +425,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D38B6324282E3B19005FD423 /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = Nuke;
+		};
+		D3D6F10E283286F300E6032E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3D6F10D283286F300E6032E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -7,25 +7,68 @@
 
 import UIKit
 import Nuke
+import Alamofire
+
+struct AnimePosterImage: Codable {
+    let tiny: String
+    let large: String
+    let small: String
+    let medium: String
+    let original: String
+}
+
+struct AnimeAttribytes: Codable {
+    let synopsis: String
+    let canonicalTitle: String
+    let posterImage: AnimePosterImage
+}
+
+struct AnimeData: Codable {
+    let id: String
+    let type: String
+    let attributes: AnimeAttribytes
+}
+
+struct AnimeModel: Codable {
+    let data: [AnimeData]
+}
+
+
 
 class MainViewController: UIViewController {
-    let animeTitles: [String] = ["전생슬", "그랑죠", "원피스", "소아온", "귀칼", "나루토", "나의 히어로 아카데미"]
+    @IBOutlet weak var tableView: UITableView!
+    var modal: AnimeModel?
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidLoad()
+        AF.request("https://kitsu.io/api/edge/anime").response { response in
+            guard let data = response.data else {
+                return
+            }
+            let model = try! JSONDecoder().decode(AnimeModel.self, from: data)
+            self.modal = model
+            self.tableView.reloadData()
+        }
+        
+    }
 }
 
 extension MainViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return animeTitles.count
+        return modal?.data.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "AnimeTrendingTableViewCell", for: indexPath) as? AnimeTrendingTableViewCell,
-                let url = URL(string: "https://picsum.photos/200/30\(indexPath.row)") else {
+              let data = modal?.data[indexPath.row],
+              let url = URL(string: data.attributes.posterImage.medium) else {
             return UITableViewCell()
         }
+        
         Nuke.loadImage(with: url, into: cell.animePosterImageView)
-        cell.animeTaitleLabel.text = animeTitles[indexPath.row]
-        cell.animeSenosisLabel.text = "이건 애니매시연안기다요 호야 호호호야 현중주주주중 아아아아니니나다다와"
-    
+        cell.animeTaitleLabel.text = data.attributes.canonicalTitle
+        cell.animeSenosisLabel.text = data.attributes.synopsis
+        
         return cell
     }
     
