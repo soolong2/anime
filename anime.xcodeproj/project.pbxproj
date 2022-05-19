@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D326FAC728368AB200CF8B63 /* AnimeModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D326FAC628368AB200CF8B63 /* AnimeModal.swift */; };
+		D326FACD28368E7300CF8B63 /* MangGaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D326FACC28368E7300CF8B63 /* MangGaViewController.swift */; };
 		D38B6321282E270F005FD423 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38B6320282E270F005FD423 /* MainViewController.swift */; };
 		D38B6323282E2FC8005FD423 /* AnimeTrendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38B6322282E2FC8005FD423 /* AnimeTrendingTableViewCell.swift */; };
 		D38B6326282E3B19005FD423 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = D38B6325282E3B19005FD423 /* Nuke */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D326FAC628368AB200CF8B63 /* AnimeModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeModal.swift; sourceTree = "<group>"; };
+		D326FACC28368E7300CF8B63 /* MangGaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangGaViewController.swift; sourceTree = "<group>"; };
 		D38B6320282E270F005FD423 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D38B6322282E2FC8005FD423 /* AnimeTrendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTrendingTableViewCell.swift; sourceTree = "<group>"; };
 		D3BBC5F328294AC300E9F758 /* anime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,9 +51,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D326FACB28368E4900CF8B63 /* MangGa */ = {
+			isa = PBXGroup;
+			children = (
+				D326FACC28368E7300CF8B63 /* MangGaViewController.swift */,
+			);
+			path = MangGa;
+			sourceTree = "<group>";
+		};
 		D38B631F282E26F3005FD423 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				D326FAC628368AB200CF8B63 /* AnimeModal.swift */,
 				D38B6320282E270F005FD423 /* MainViewController.swift */,
 				D3BBC5FC28294AC300E9F758 /* Main.storyboard */,
 				D38B6322282E2FC8005FD423 /* AnimeTrendingTableViewCell.swift */,
@@ -76,6 +89,7 @@
 		D3BBC5F528294AC300E9F758 /* anime */ = {
 			isa = PBXGroup;
 			children = (
+				D326FACB28368E4900CF8B63 /* MangGa */,
 				D38B631F282E26F3005FD423 /* Main */,
 				D3BBC60B2829511400E9F758 /* Splash */,
 				D3BBC5F628294AC300E9F758 /* AppDelegate.swift */,
@@ -179,7 +193,9 @@
 				D3BBC5F728294AC300E9F758 /* AppDelegate.swift in Sources */,
 				D3BBC5F928294AC300E9F758 /* SceneDelegate.swift in Sources */,
 				D38B6323282E2FC8005FD423 /* AnimeTrendingTableViewCell.swift in Sources */,
+				D326FACD28368E7300CF8B63 /* MangGaViewController.swift in Sources */,
 				D3BBC60D2829514400E9F758 /* SplashViewController.swift in Sources */,
+				D326FAC728368AB200CF8B63 /* AnimeModal.swift in Sources */,
 				D38B6321282E270F005FD423 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

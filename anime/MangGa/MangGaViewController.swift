@@ -1,23 +1,22 @@
 //
-//  MainViewController.swift
+//  MangGaViewController.swift
 //  anime
 //
-//  Created by so on 2022/05/13.
+//  Created by so on 2022/05/19.
 //
 
 import UIKit
-import Nuke
 import Alamofire
+import Nuke
 
-
-class MainViewController: UIViewController {
+class MangGaViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var modal: AnimeModel?
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidLoad()
         //AF통신
-        AF.request("https://kitsu.io/api/edge/anime").response { response in
+        AF.request("https://kitsu.io/api/edge/manga").response { response in
             guard let data = response.data else {
                 return
             }
@@ -27,9 +26,11 @@ class MainViewController: UIViewController {
         }
         
     }
+    
+    
+    // Do any additional setup after loading the view.
 }
-
-extension MainViewController: UITableViewDelegate,UITableViewDataSource{
+extension MangGaViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return modal?.data.count ?? 0
     }
@@ -61,4 +62,7 @@ extension MainViewController: UITableViewDelegate,UITableViewDataSource{
         }
     }
     
+    
+    
 }
+
