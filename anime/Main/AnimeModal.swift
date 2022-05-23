@@ -7,6 +7,9 @@
 
 import Foundation
 
+struct AinmCoverImage:Codable{
+    let large: String
+}
 struct AnimePosterImage: Codable {
     let tiny: String
     let large: String
@@ -17,6 +20,7 @@ struct AnimePosterImage: Codable {
 
 struct AnimeAttribytes: Codable {
     let synopsis: String
+    let coverImage: AinmCoverImage?
     let canonicalTitle: String
     let posterImage: AnimePosterImage
 }

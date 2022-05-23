@@ -30,6 +30,15 @@ class MainViewController: UIViewController {
 }
 
 extension MainViewController: UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      tableView.deselectRow(at: indexPath, animated: true)
+        guard let viewContoller = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {return}
+        viewContoller.model = modal?.data[indexPath.row]
+        navigationController?.pushViewController(viewContoller, animated: true)
+        
+    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return modal?.data.count ?? 0
     }

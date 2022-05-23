@@ -12,6 +12,7 @@
 		D38B6321282E270F005FD423 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38B6320282E270F005FD423 /* MainViewController.swift */; };
 		D38B6323282E2FC8005FD423 /* AnimeTrendingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38B6322282E2FC8005FD423 /* AnimeTrendingTableViewCell.swift */; };
 		D38B6326282E3B19005FD423 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = D38B6325282E3B19005FD423 /* Nuke */; };
+		D396710F283BCB02007248C6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D396710E283BCB02007248C6 /* DetailViewController.swift */; };
 		D3BBC5F728294AC300E9F758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BBC5F628294AC300E9F758 /* AppDelegate.swift */; };
 		D3BBC5F928294AC300E9F758 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BBC5F828294AC300E9F758 /* SceneDelegate.swift */; };
 		D3BBC5FE28294AC300E9F758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3BBC5FC28294AC300E9F758 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		D326FACC28368E7300CF8B63 /* MangGaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangGaViewController.swift; sourceTree = "<group>"; };
 		D38B6320282E270F005FD423 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D38B6322282E2FC8005FD423 /* AnimeTrendingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeTrendingTableViewCell.swift; sourceTree = "<group>"; };
+		D396710E283BCB02007248C6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D3BBC5F328294AC300E9F758 /* anime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = anime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3BBC5F628294AC300E9F758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3BBC5F828294AC300E9F758 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				D38B6320282E270F005FD423 /* MainViewController.swift */,
 				D3BBC5FC28294AC300E9F758 /* Main.storyboard */,
 				D38B6322282E2FC8005FD423 /* AnimeTrendingTableViewCell.swift */,
+				D396710E283BCB02007248C6 /* DetailViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				D3BBC60D2829514400E9F758 /* SplashViewController.swift in Sources */,
 				D326FAC728368AB200CF8B63 /* AnimeModal.swift in Sources */,
 				D38B6321282E270F005FD423 /* MainViewController.swift in Sources */,
+				D396710F283BCB02007248C6 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
